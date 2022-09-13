@@ -1,0 +1,88 @@
+from pygame import mixer
+import time
+
+
+
+while True:
+    time.sleep(30*60)
+
+    while True:
+
+        mixer.init()
+
+
+        mixer.music.load("D:\\_Zindagi Kuch Toh Bata.mp3")
+
+
+        mixer.music.set_volume(0.7)
+
+
+        mixer.music.play()
+
+        print("It's a reminder of your water break.Drink a glass of water and press 'drank' to stop the music ")
+
+        query = input("  ")
+
+        if query == 'drank':
+            mixer.music.stop()
+            break
+
+
+
+
+
+
+
+
+
+    time.sleep(40*60)
+
+    while True:
+
+        mixer.init()
+
+        mixer.music.load("D:\\A_Thousand_Years.mp3")
+
+        mixer.music.set_volume(0.7)
+
+        mixer.music.play()
+
+        print("It's a reminder of your eye break.Please do some eye exercise and press 'eydone' to stop the music ")
+
+        query = input("  ")
+
+        if query == 'eydone':
+            mixer.music.stop()
+            break
+
+
+
+
+
+
+
+    time.sleep(45*60)
+
+    while True:
+
+        mixer.init()
+
+        mixer.music.load("D:\\Agar_Tum_Saath_Ho.mp3")
+
+        mixer.music.set_volume(0.7)
+
+        mixer.music.play()
+
+        print(
+            "It's a reminder of your physical activity break.Please do some physical exercise and press 'exdone' to stop the music ")
+
+        query = input("  ")
+
+        if query == 'exdone':
+            mixer.music.stop()
+            break
+
+
+
+
+
